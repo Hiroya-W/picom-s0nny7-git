@@ -1,12 +1,10 @@
-# Maintainer: iBhagwan <bhagwan at disroot dot org>
-
-pkgname=picom-ibhagwan-git
+pkgname=picom-s0nny7-git
 _gitname=picom
-pkgver=1577_Next.296.g6d87428_2021.02.05
+pkgver=1578_Next.297.gd74c099_2021.06.09
 pkgrel=1
-pkgdesc="iBhagwan's compton|picom fork (X compositor) with dual_kawase blur and rounded corners"
+pkgdesc="s0nny7's compton|picom fork (X compositor) Fixed shadow issue"
 arch=(i686 x86_64)
-url="https://github.com/ibhagwan/${_gitname}"
+url="https://github.com/s0nny7/${_gitname}"
 license=('MIT' 'MPL2')
 depends=('libgl' 'libev' 'pcre' 'libx11' 'xcb-util-renderutil' 'libxcb' 'xcb-util-image' 'libxext'
          'pixman' 'libconfig' 'libdbus' 'hicolor-icon-theme' 'libxdg-basedir')
@@ -19,7 +17,7 @@ provides=('compton' 'compton-git' 'picom' 'picom-git')
 conflicts=('compton' 'compton-git' 'picom' 'picom-git')
 #replaces=('compton-git' 'picom-git')
 options=('!strip')
-source=(git+"https://github.com/ibhagwan/${_gitname}.git#branch=next-rebase")
+source=(git+"https://github.com/s0nny7/${_gitname}.git#branch=fix-shadow-clean")
 md5sums=("SKIP")
 
 pkgver() {
